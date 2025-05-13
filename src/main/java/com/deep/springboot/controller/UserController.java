@@ -26,6 +26,11 @@ public class UserController {
 		return userServices.addUser(user);
 	}
 	
+	@GetMapping(path = "/msg")
+	protected String  addUser() {
+		return "Hello World";
+	}
+	
 	@PostMapping(path = "/users/auth")
 	protected String authentication(@RequestParam String email,@RequestParam String password) {
 		User auth = userServices.auth(email,password);
