@@ -17,7 +17,7 @@ import com.deep.springboot.service.ProductServices;
 import com.deep.springboot.service.UserServices;
 
 @RestController
-@CrossOrigin(origins = "https://backend-production-179a.up.railway.app/")
+@CrossOrigin(origins = "https://backend-production-179a.up.railway.app")
 public class UserController {
 	
 	@Autowired
